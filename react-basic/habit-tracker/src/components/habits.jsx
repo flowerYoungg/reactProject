@@ -13,17 +13,27 @@ class Habits extends Component {
 
     //Increment
     handleIncrement =(habit) =>{
-        console.log(`handleIncrement ${habit.name}`);
+        const habits = [...this.state.habits];
+        const index = habits.indexOf(habit);
+        habits[index].count++;
+        this.setState({ habits : habits});
     };
     
     //Decrement
     handleDecrement =(habit) =>{
-        console.log(`handleDecrement ${habit.name}`);
+        const habits = [...this.state.habits];
+        const index = habits.indexOf(habit);
+        habits[index].count--;
+        const count = habits[index].count -1;
+        //마이너스 방지
+        habits[index].count = count < 0 ? 0 : count;
+        this.setState({ habits : habits});
     };
 
     //Delete
     handleDelete =(habit) =>{
-        console.log(`handleDelete ${habit.name}`);
+        const habits = this.state.habits.filter(item => item.id !== habit.id);
+        this.setState({ habits : habits});
     }
 
     render() {
