@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-class HabitAddForm extends Component {
+class HabitAddForm extends PureComponent {
   formRef = React.createRef();
   inputRef = React.createRef();
 
@@ -10,7 +10,6 @@ class HabitAddForm extends Component {
     const name = this.inputRef.current.value;
     name && this.props.onAdd(name);
     //텍스트 입력 후 초기화
-    //this.inputRef.current.value = "";
     this.formRef.current.reset();
   };
 
