@@ -1,6 +1,10 @@
 import React, { PureComponent } from "react";
 
 class Habit extends PureComponent {
+  //라이프사이클 메소드
+  componentDidMount() {}
+  componentWillUnmount() {}
+
   //Increment
   handleIncrement = () => {
     // state 오브젝트 안에 있는 count를 증가시킨 뒤 state를 업데이트 한다
