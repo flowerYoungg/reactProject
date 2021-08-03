@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import Navbar from "./components/navbar";
 
 class App extends Component {
-  //다시 한번 강의 듣고 클론 코딩 해보기
   state = {
     habits: [
       { id: 1, name: "Sleeping", count: 0 },
