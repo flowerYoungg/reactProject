@@ -9,7 +9,7 @@ const HabitAddForm = memo((props) => {
     event.preventDefault();
     const name = inputRef.current.value;
     name && props.onAdd(name);
-    //텍스트 입력 후 초기화, 더 쉬운 방법도 있음
+    //텍스트 입력 후 초기화
     formRef.current.reset();
   };
 
