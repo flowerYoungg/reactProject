@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Navbar from "./components/navbar";
 
 class App extends Component {
-  //Start from 4.7  😈
+  //Start from 4.9  🐷
   state = {
     habits: [
       { id: 1, name: "Sleeping", count: 0 },
