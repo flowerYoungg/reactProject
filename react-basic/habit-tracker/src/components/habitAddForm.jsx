@@ -1,6 +1,6 @@
-import React, { memo } from "react";
+import React, { PureComponent } from "react";
 
-const HabitAddForm = memo((props) => {
+const HabitAddForm = PureComponent((props) => {
   const formRef = React.createRef();
   const inputRef = React.createRef();
 
@@ -8,6 +8,7 @@ const HabitAddForm = memo((props) => {
     //page refresh 방지
     event.preventDefault();
     const name = inputRef.current.value;
+    //if there is name
     name && props.onAdd(name);
     //텍스트 입력 후 초기화
     formRef.current.reset();
