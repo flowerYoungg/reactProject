@@ -4,11 +4,12 @@ import React, { Component } from "react";
 import Navbar from "./components/navbar";
 
 class App extends Component {
-  //Start from 4.15🐷
+  //Start from 4.16🔰
   //Increment
   handleIncrement = (habit) => {
     const habits = this.state.habits.map((item) => {
       if (item.id === habit.id) {
+        //habit과 동일한 오브젝트가 생성(...habit)
         return { ...habit, count: habit.count + 1 };
       }
       return item;
@@ -46,6 +47,7 @@ class App extends Component {
   //Reset
   handleReset = () => {
     const habits = this.state.habits.map((habit) => {
+      //count가 0 일 때만 리셋한다
       if (habit.count !== 0) {
         return { ...habit, count: 0 };
       }
