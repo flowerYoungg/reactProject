@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-
+// shortcut key : rsi
 const HabitAddForm = PureComponent((props) => {
   const formRef = React.createRef();
   const inputRef = React.createRef();

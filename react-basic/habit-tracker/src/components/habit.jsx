@@ -1,8 +1,10 @@
 import React, { PureComponent } from "react";
 
 class Habit extends PureComponent {
-  //라이프사이클 메소드
+  //LifeCycle Method
+  //Component가 UI에 등록되어졌을 때 호출
   componentDidMount() {}
+  //Component가 UI에서 지워지기 전에 호출
   componentWillUnmount() {}
 
   //Increment
