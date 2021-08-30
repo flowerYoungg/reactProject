@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Navbar from "./components/navbar";
 
 class App extends Component {
-  //Start from 5.4🔰
+  //Start from 7.1🔅
   //Increment
   handleIncrement = (habit) => {
     const habits = this.state.habits.map((item) => {
