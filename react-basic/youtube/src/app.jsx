@@ -6,4 +6,4 @@ function App() {
 
 export default App;
 //postman
-//start at 8.1💨
+//start at 8.1 유튜브 프로젝트 시작💨
