@@ -24,4 +24,3 @@ function App() {
 }
 
 export default App;
-//start at 8.1
