@@ -1,5 +1,4 @@
-// import firebase from "firebase/compat/app";
-import firebaseApp from "./firebase";
+import { firebaseApp } from "./firebase";
 import {
   getAuth,
   signInWithPopup,
